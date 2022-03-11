@@ -1,5 +1,7 @@
 <Cgrid>
     rows:5
+    id:calculator
+    show:entry
     spacing:10
 
     BoxLayout:
@@ -52,13 +54,13 @@
     BoxLayout:
         spacing:10
         Button:
-            on_press: entry.text += self.text
-            text:'R'
+            on_press: entry.text = ""
+            text:'Reset'
         Button:
             on_press: entry.text += self.text
             text:'0'
         Button:
-            on_press: entry.text += self.text
+            on_press: calculator.cal(entry.text)
             text:'='
         Button:
             on_press: entry.text += self.text
