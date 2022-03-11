@@ -1,45 +1,66 @@
-<Cgrid> :
+<Cgrid>
     rows:5
+    spacing:10
 
     BoxLayout:
         TextInput:
-            font_size = 32
-            multiline = false
-
+            font_size : 32
+            multiline : False
+            id: entry
     BoxLayout:
+        spacing:10
         Button:
-            Text:"7"
+            text:"7"
+            on_press: entry.text += self.text
         Button:
-            Text:'8'
+            on_press: entry.text += self.text
+            text:"8"
         Button:
-            Text:'9'
+            on_press: entry.text += self.text
+            text:'9'
         Button:
-            Text:'+'
+            on_press: entry.text += self.text
+            text:'+'
     BoxLayout:
+        spacing:10
         Button:
-            Text:'4'
+            on_press: entry.text += self.text
+            text:'4'
         Button:
-            Text:'5'
+            on_press: entry.text += self.text
+            text:'5'
         Button:
-            Text:'6'
+            on_press: entry.text += self.text
+            text:'6'
         Button:
-            Text:'-'
+            on_press: entry.text += self.text
+            text:'-'
     BoxLayout:
+        spacing:10
         Button:
-            Text:'1'
+            on_press: entry.text += self.text
+            text:'1'
         Button:
-            Text:'2'
+            on_press: entry.text += self.text
+            text:'2'
         Button:
-            Text:'3'
+            on_press: entry.text += self.text
+            text:'3'
         Button:
-            Text:'*'
+            on_press: entry.text += self.text
+            text:'*'
     BoxLayout:
+        spacing:10
         Button:
-            Text:'R'
+            on_press: entry.text += self.text
+            text:'R'
         Button:
-            Text:'0'
+            on_press: entry.text += self.text
+            text:'0'
         Button:
-            Text:'='
+            on_press: entry.text += self.text
+            text:'='
         Button:
-            Text:'/'
+            on_press: entry.text += self.text
+            text:'/'
 
